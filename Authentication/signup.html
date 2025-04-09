@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <h1>User_Sign_Up</h1>
+    <div>
+        <form action="post" onsubmit="submitsignup(event)">
+            <input type="text" placeholder="Enter your Name" id="name" required><br>
+            <input type="email" placeholder="Enter your Email" id="email" required><br>
+            <input type="password" name="pass" id="password" placeholder="Enter your Password" required><br>
+            <button type="submit">Signup</button>
+            <p>Already A User <a href="./login.html">login</a></p>
+        </form>
+    </div>
+
+    <script>
+        let head = document.querySelector("h1")
+        head.style.textAlign = "center"
+        let div = document.querySelector("div")
+        div.style.display = "flex"
+        div.style.justifyContent = "center"
+        div.style.alignItems = "center"
+        let form = document.querySelector("form")
+        form.style.display = "grid"
+        form.style.justifyItems = "center"
+
+        function submitsignup(e) {
+            e.preventDefault()
+            const name = document.getElementById("name").value.trim()
+            const mail = document.getElementById("email").value.trim()
+            const pass = document.getElementById("password").value.trim()
+            let user = {
+                user_name: name,
+                user_mail: mail,
+                user_password: pass
+            }
+            console.log(user)
+            const allDetails = JSON.parse(localStorage.getItem("signupdetails") || "[]");
+            const existedUser=allDetails.find(x=>x.user_mail === mail)
+            if(existedUser){
+                return alert("User already existed")
+            }
+            allDetails.push(user);
+            localStorage.setItem("signupdetails", JSON.stringify(allDetails));
+            window.location.href = "login.html"
+
+        }
+
+
+    </script>
+</body>
+
+</html>

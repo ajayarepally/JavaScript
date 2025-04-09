@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>User_Login</h1>
+    <div>
+        <form action="post" onsubmit="loginDetails(event)">
+            <input type="email" placeholder="Enter your Email" id="mail" required><br>
+            <input type="password" placeholder="Enter your Password" id="password" required><br>
+            <button type="submit">Login</button>
+            <p>User doesn't Exists ? <a href="./signup.html">Sign-up</a></p>
+        </form>
+    </div>
+
+    <script>
+        let head = document.querySelector("h1")
+        head.style.textAlign = "center"
+        let div = document.querySelector("div")
+        div.style.display = "flex"
+        div.style.justifyContent = "center"
+        div.style.alignItems = "center"
+        let form = document.querySelector("form")
+        form.style.display = "grid"
+        form.style.justifyItems = "center"
+
+        function loginDetails(e){
+            e.preventDefault()
+            const login_mail=document.getElementById("mail").value.trim()
+            const login_pass=document.getElementById("password").value.trim()
+
+            let login=JSON.parse(localStorage.getItem("signupdetails"))
+            let userFound=login.find(x=>x.user_mail === login_mail && x.user_password === login_pass)
+            if(userFound){
+                localStorage.setItem("LoggedinUsers",JSON.stringify(login_mail))
+                alert("Logged-in Successfully")
+                window.location.href="./dashboard.html"
+            }
+            else{
+                alert("User not exist, please sign-up")
+            }
+        }
+    </script>
+</body>
+</html>

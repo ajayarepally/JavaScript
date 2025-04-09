@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1>Dash-Board</h1>
+    <div>
+        <button onclick="logout()">Login-0ut</button>
+    </div>
+
+    <script>
+        let head = document.querySelector("h1")
+        head.style.textAlign = "center"
+        let div = document.querySelector("div")
+        div.style.display = "flex"
+        div.style.justifyContent = "center"
+        div.style.alignItems = "center"
+
+        function logout(){
+            const user=JSON.parse(localStorage.getItem("LoggedinUsers"))
+            let confirmation=confirm("Confirm to logout")
+            if(confirmation){
+                localStorage.removeItem("LoggedinUsers")
+                window.location.href="login.html"
+            }
+        }
+    </script>
+</body>
+
+</html>
