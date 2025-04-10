@@ -1,0 +1,36 @@
+body{
+    transition: background-color 0.5s ease;
+}
+.btn{
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.violet{
+    background-color: violet;
+}
+.indigo{
+    background-color: indigo;
+    color: white;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.yellow{
+    background-color: yellow;
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+}
