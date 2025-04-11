@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 5rem;
+        }
+        button{
+            border: none;
+            border-bottom: 3px solid black;
+            border-radius: 5rem;
+            cursor: pointer;
+        }
+        #puppyimg{
+            width: 100%;
+        }
+        #puppyimg > img{
+            width: 70%;
+            height: 70%;
+        }
+    </style>
+</head>
+<body>
+    <button id="clr">Random Color</button><br><br>
+    <button id="otp">Generate OTP</button><br><br>
+    Generated OTP : <span id="span"></span><br><br>
+    <button id="img">Change Image</button><br><br>
+    <div id="puppyimg"></div>
+    <script src="./color.js"></script>
+</body>
+</html>
