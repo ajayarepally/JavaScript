@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="voltage">Voltage : </label>
+    <input type="number" id="volt"><br><br>
+    <label for="current">Current :</label>
+    <input type="number" id="curr"><br><br>
+    <button onclick="pow()">Power</button>
+    <p>Power : <span id="power"></span></p>
+    <input type="text" placeholder="Enter something" onkeydown="key(event)">
+    <p id="a"></p>
+    <script>
+        function pow(){
+            let a=parseInt(document.getElementById("volt").value)
+            let b=parseInt(document.getElementById("curr").value)
+            let c=a*b
+            document.getElementById("power").innerText=c
+        }
+        function key(event) {
+        document.getElementById("a").innerText = "something " + event.target.value;
+        }
+    </script>
+</body>
+</html>
