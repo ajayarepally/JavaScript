@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+#cardsContainer{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+}
+.classImg{
+    width:50%;
+}

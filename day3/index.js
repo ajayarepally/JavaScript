@@ -1,4 +1,4 @@
-const data=[[
+let data=[
     {
       "id": 1,
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -239,7 +239,7 @@ const data=[[
         "count": 145
       }
     }
-  ]]
+  ]
 let cardsContainer=document.getElementById("cardsContainer");
 for (let i=0;i<data.length;i++){
     let card=document.createElement("div");

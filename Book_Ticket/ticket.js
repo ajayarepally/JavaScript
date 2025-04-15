@@ -29,7 +29,7 @@ btn.addEventListener("click",()=>{
     }
 
     const seat = prompt("💺 Enter seat number (1-10) : ");
-    if(!seat) return alert("❌ Seats required. Booking cancelled!!");
+    if(!["1","2","3","4","5","6","7","8","9","10"].includes(seat)) return alert("❌ Seats required. Booking cancelled!!");
 
     const confirmPayment = confirm(`Confirm booking for :\n 🎬Movie : ${movie} \n Row : ${row} \n Seat : ${seat} \n Total : ₹300`);
     if(!confirmPayment) return alert("❌ Payment cancelled!!");
