@@ -1,10 +1,106 @@
 body{
     text-align: center;
 }
+h1{
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+#choosecategory{
+    background-color: #cfece5;
+    border-radius: 20px;
+    font-size: 1.2em;
+    box-shadow: 0px 10px 20px gray;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+button{
+    background-color:black;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    box-shadow: 0px 10px 20px gray;
+}
+#card{
+    border-radius: 10px;
+    /* border: 0.5px solid black; */
+    /* width:300px; */
+    height: 30rem;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#btns > span{
+    padding:5px 25px ;
+    background-color:#bcb8b1;
+    border-radius: 5px;
+    color:#2f2f2f;
+    margin-right: 20px;
+}
+#card > #img{
+    width: 100%;
+    height: 60%;
+}
 #cardsContainer{
     display: grid;
-    grid-template-columns:repeat(4,1fr) ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
 }
-.classImg{
-    width:50%;
+#card > p > span{
+    /* background-color:#a7c4bd; */
+    padding: 2px;
+    font-size: 20px;
+    color: #2f2f2f;
+    border-radius:5px; 
+}
+
+@media (max-width:450px){
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 30px; */
+        /* width:fit-content; */
+    }
+    #btns > span{
+        margin: 0;
+    }
+}
+@media (min-width:451px) and (max-width:770px){
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #btns > span{
+        margin: 0;
+    }
+}
+@media (min-width:771px) and (max-width:1024px){
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #btns > span{
+        margin: 0;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #btns > span{
+        margin: 0;
+    }
+}
+@media (min-width:1445px) and (max-width:2560px){
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #btns > span{
+        margin: 0;
+    }
 }

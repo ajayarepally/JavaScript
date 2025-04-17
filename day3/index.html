@@ -8,6 +8,15 @@
 </head>
 <body>
     <h1>SHOP</h1>
+    <select name="choose" id="choosecategory" >
+        <option value="select" selected disabled>--Select Option--</option>
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+    </select><br><br>
+    <button onclick="getitems()" >Get Items</button><hr>
+    <br><br>
     <div id="cardsContainer"></div>
     <script src="./index.js"></script>
 </body>
