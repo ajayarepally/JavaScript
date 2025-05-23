@@ -1,0 +1,79 @@
+#nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: lightcyan;
+}
+#links>span{
+    padding: 5px 10px;
+    background-color: rgb(246, 160, 188);
+    border-radius: 5px;
+}
+
+#links{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+#links>span:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+}
+#allspan{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.devtypeBtn{
+    padding: 5px 10px;
+    background-color: lightsteelblue;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+.devtypeBtn:hover{
+    cursor: pointer;
+    background-color: rgb(81, 148, 236);
+    color: antiquewhite;
+}
+.catdisplay{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+}
+.devcard{
+    margin-top: 5%;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 5px;
+}
+.cardspan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardspan>span{
+    color: rgb(255, 0, 0);
+    font-size: 1.3rem;
+    transition: transform 0s ease-in 0s;
+}
+.cardspan>span:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media (max-width:430px){
+    .catdisplay{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2%;
+    }
+}
+@media (min-width:431px) and (max-width:770px){
+    .catdisplay{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2%;
+    }
+}
