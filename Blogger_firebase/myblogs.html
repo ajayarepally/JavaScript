@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Blogs | PurelyBlog</title>
+    <link rel="stylesheet" href="blogger.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="#myBlogsSection">My Blogs</a></li>
+            <li><a href="#allBlogsSection">All Blogs</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <button id="logoutBtn" class="nav-btn">Logout</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="blog-creation">
+            <h2>Create a New Blog</h2>
+            <form id="blogForm">
+                <input type="text" id="blogTitle" placeholder="Blog Title" required>
+                <textarea id="blogContent" placeholder="Write your blog here..." required></textarea>
+                <input type="text" id="blogImageUrl" placeholder="Image URL (optional)">
+                <button type="submit" class="create">Publish Blog</button>
+            </form>
+        </section>
+
+        <section class="all-blogs" id="allBlogsSection">
+            <h2>All Users' Blogs</h2>
+            <div id="allBlogsList">
+                <!-- All blogs will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="my-blogs" id="myBlogsSection">
+            <h2>My Published Blogs</h2>
+            <div id="blogsList">
+                <!-- Current user's blogs will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-storage-compat.js"></script>
+    <script src="myblogs.js"></script>
+    <script src="https://kit.fontawesome.com/f1ce9f1ec4.js" crossorigin="anonymous"></script>
+
+    <footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 PurelyBlog | Your Stories, Your Voice</p>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

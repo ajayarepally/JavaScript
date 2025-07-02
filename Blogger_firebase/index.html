@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurelyBlog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#blog-categories">Blogs</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <a href="./login.html"><button id="loginBtn" class="nav-btn">Login</button></a>
+      <a href="./signup.html"><button id="signupBtn" class="nav-btn">Sign Up</button></a>
+    </div>
+  </nav>
+
+
+  <section class="landing">
+    <div class="landing-content">
+      <div class="landing-text">
+        <h1>Welcome to PurelyBlog!</h1>
+        <p>
+          Share your stories, connect with your peers, and explore the latest updates from your college community.
+          Join now to start blogging and make your voice heard!
+        </p>
+        <!-- <a href="./signup.html"><button class="btn">CREATE ACCOUNT</button></a> -->
+        <a href="./signup.html"><button class="create">+CREATE BLOG</button></a>
+      </div>
+      <div class="landing-image">
+        <img src="./home.png" alt="Person typing on keyboard">
+      </div>
+    </div>
+  </section>
+  
+  <section class="blog-categories" id="blog-categories">
+    <h2>Explore Blog Categories</h2>
+    <div class="categories-grid">
+      <a href="https://www.igauge.in/blogs/role-of-campus-life-in-student-success" target="new"><div class="category-card campus">
+        <span class="category-icon">🏫</span>
+        <h3>Campus Life</h3>
+        <p>Stories and experiences from everyday campus living.</p>
+      </div></a>
+      <a href="https://bloggers.feedspot.com/innovation_blogs/" target="new"><div class="category-card tech">
+        <span class="category-icon">💡</span>
+        <h3>Tech & Innovation</h3>
+        <p>Latest trends, gadgets, and student tech projects.</p>
+      </div></a>
+      <a href="https://www.eventbrite.com/blog/?msockid=2fb019fe12e66d0924c10bb8130e6c2b" target="new"><div class="category-card events">
+        <span class="category-icon">🎉</span>
+        <h3>Events</h3>
+        <p>Coverage of college fests, seminars, and workshops.</p>
+      </div></a>
+      <a href="https://authorservices.taylorandfrancis.com/research-impact/how-to-write-an-academic-blog-post/" target="new"><div class="category-card academics">
+        <span class="category-icon">📚</span>
+        <h3>Academics</h3>
+        <p>Tips, resources, and academic achievements.</p>
+      </div></a>
+      <a href="https://novoresume.com/career-blog" target="new"><div class="category-card career">
+        <span class="category-icon">🚀</span>
+        <h3>Career</h3>
+        <p>Internships, placements, and career guidance.</p>
+      </div></a>
+      <a href="https://mymodernmet.com/best-art-blogs-daily-inspiration/#:~:text=We%27ve%20scoured%20the%20internet%20to%20find%20the%20best,art%20and%20culture%20blogs%20today%2C%20in%20alphabetical%20order." target="new"><div class="category-card arts">
+        <span class="category-icon">🎨</span>
+        <h3>Arts & Culture</h3>
+        <p>Showcasing creativity, music, and campus culture.</p>
+      </div></a>
+      <a href="https://detailed.com/sports-blogs/" target="new"><div class="category-card sports">
+        <span class="category-icon">⚽</span>
+        <h3>Sports</h3>
+        <p>Updates and stories from the college sports arena.</p>
+      </div></a>
+      <a href="https://www.cinemaexpress.com/" target="new"><div class="category-card cinema">
+        <span class="category-icon">🎥</span>
+        <h3>Cinema</h3>
+        <p>Updates and stories from the Film Industry.</p>
+      </div></a>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-main">
+      <div class="about-image">
+        <img src="./about.png" alt="About Blogging Platform">
+      </div>
+      <div class="about-text">
+        <h2>About PurelyBlog</h2>
+        <p>
+          PurelyBlog is your digital campus diary—a vibrant platform for students to share stories, insights, and
+          creativity. Whether you’re passionate about academics, campus life, or the latest tech, this is your space to
+          connect, express, and inspire.
+        </p>
+      </div>
+    </div>
+    <div class="about-subtopic">
+      <div class="about-sub-image">
+        <img src="./Abou.png" alt="Earn Money Blogging">
+      </div>
+      <div class="about-sub-text">
+        <h3>Ways to Earn Money Blogging</h3>
+        <ul>
+          <li><strong>Ad Revenue:</strong> Display ads on your posts and earn as your audience grows.</li>
+          <li><strong>Sponsored Content:</strong> Collaborate with brands for sponsored articles and reviews.</li>
+          <li><strong>Affiliate Marketing:</strong> Share product links and earn commissions on sales.</li>
+          <li><strong>Premium Content:</strong> Offer exclusive guides or tutorials for a fee.</li>
+        </ul>
+        <p>
+          Start building your online presence and turn your passion into profit with PurelyBlog!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-wrap" id="contact">
+    <div class="contact-container">
+      <div class="contact-image">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+          alt="Contact Us">
+      </div>
+      <form class="contact-form">
+        <h2>Contact Us</h2>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-row">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-row">
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="logo.png" alt="PurelyBlog Logo">
+        <p>PurelyBlog &copy; 2025<br>Your Campus, Your Stories.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@purelyblog.com">info@purelyblog.com</a></p>
+        <p>Instagram: <a href="#">@purelyblog</a></p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made with ❤️ by the PurelyBlog Team</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Sign Up Modal -->
+
+
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+  <!-- Your app.js -->
+  <script src="app.js"></script>
+
+
+  <!-- Modal placeholders for Login/Sign Up (to be implemented) -->
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/f1ce9f1ec4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
